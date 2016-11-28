@@ -20,7 +20,7 @@ def webhook():
       text=text.lower()
       sender = data['entry'][0]['messaging'][0]['sender']['id'] # Sender ID
       payload = {'recipient': {'id': sender}}
-      resp=interaction.get_bot_response(text)
+      resp=interaction.get_bot_response(text,"chepix")
       resp=resp.split("!!")
       if len(resp)>1:#special case, saying hi
           resp=resp[0]
