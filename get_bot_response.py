@@ -11,7 +11,7 @@ def give_card(text,card_options):
     for option in card_options:
         buttons.append({
             "type":"postback",
-            "tittle":option,
+            "title":option,
             "payload":"DEVELOPER_DEFINED_PAYLOAD"
         })
 
@@ -34,7 +34,7 @@ def give_final_offer(semantic):#TONYX AQUI ES DONDE HAY QUE PEDIR AL SERVIDOR LO
     #POR AHORA SOLO RESPONDE TEXTO
     #nota los botones ayudan a poder hacer nuevas peticiones es importante dejarlos
     return give_card("Se ofrece seguro con características: "+str(semantic),["confirmo","nueva consulta"])
-    
+
 
 def open_list(path):
     return pickle.load(open(path, "rb" ) )

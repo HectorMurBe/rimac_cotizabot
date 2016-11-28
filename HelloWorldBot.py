@@ -24,7 +24,7 @@ def webhook():
       sender = data['entry'][0]['messaging'][0]['sender']['id'] # Sender ID
       payload = {'recipient': {'id': sender}}
       resp=interaction.get_bot_response(text,"chepix")
-      print resp
+      
       """resp=resp.split("!!")
       if len(resp)==2:#special case, saying hi
           resp=resp[0]
@@ -45,7 +45,7 @@ def webhook():
         print "estoy aqui"
         message=get_bot_response.get_response(text)
         payload["message"]=message
-      else:#whe preprocessed
+    else:#when preprocessed
           message= {'text':resp}
           payload["message"]=message
           get_bot_response.save_list(os.path.realpath("./string_cache/semantic.pkl"),['','','',''])
