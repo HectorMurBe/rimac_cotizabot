@@ -18,6 +18,7 @@ def webhook():
       sender = data['entry'][0]['messaging'][0]['sender']['id'] # Sender ID
       payload = {'recipient': {'id': sender}}
       message=get_bot_response.get_response(text)
+      payload["message"]=message
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
     except Exception as e:
       print traceback.format_exc() # something went wrong
