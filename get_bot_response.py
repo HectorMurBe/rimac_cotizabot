@@ -90,7 +90,7 @@ def get_response(message):
     if semantic[1]=='':#cheack for model
         return give_card("Ahora podría decirme sobre algun modelo que le interece, entre los que tengo están",diccs.marcas[semantic[0]][0:3])
     if semantic[2]=='':#check for year
-        return give_card("¿Podría proporcionarme el año de su vehículo? o ¿está dentro de los siguiéntes casos?",['2016','2015','2014','2013','2012'])
+        return give_card("¿Podría proporcionarme el año de su vehículo? o ¿está dentro de los siguiéntes casos?",['2016''2014','2013'])
     if semantic[3]=='':#check for gas converted
         return give_card("Perfecto, solo falta saber si su coche fue convertido a gas",["mi coche fue convertido a gas","no fue convertido a gas"])
     else:

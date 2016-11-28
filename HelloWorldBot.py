@@ -25,7 +25,7 @@ def webhook():
       payload = {'recipient': {'id': sender}}
       resp=interaction.get_bot_response(text,"chepix")
 
-      """resp=resp.split("!!")
+      resp=resp.split("!!")
       if len(resp)==2:#special case, saying hi
           resp=resp[0]
           message= {'text':resp}
@@ -39,7 +39,7 @@ def webhook():
           r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
           print "holi"
           return "Hello world"
-"""
+
 
       if resp == "[ERR: No reply matched]":#when not pre processed answe let bot decide
         print "estoy aqui"
