@@ -52,7 +52,7 @@ def webhook():
 
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
 
-      print r.body
+      print r.content
     except Exception as e:
       print traceback.format_exc() # something went wrong
   elif request.method == 'GET': # For the initial verification
