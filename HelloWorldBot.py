@@ -25,15 +25,18 @@ def webhook():
       payload = {'recipient': {'id': sender}}
       resp=interaction.get_bot_response(text,"chepix")
       resp=resp.split("!!")
-      if len(resp)>1:#special case, saying hi
+      if len(resp)==2:#special case, saying hi
           resp=resp[0]
           message= {'text':resp}
           payload["message"]=message
           get_bot_response.save_list(os.path.realpath("./string_cache/semantic.pkl"),['','','',''],)
           r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
           message=get_bot_response.get_response(text)
+          print "holi"
           payload["message"]=message
+
           r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
+          print "holi"
           return "Hello world"
 
 
