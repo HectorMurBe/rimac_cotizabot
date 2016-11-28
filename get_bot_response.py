@@ -28,10 +28,13 @@ def give_card(text,card_options):
     return message
 def give_text(text):
     message= {'text':text}
+
     return message
 def give_final_offer(semantic):#TONYX AQUI ES DONDE HAY QUE PEDIR AL SERVIDOR LOS DATOS DE LA TARJETA
     #POR AHORA SOLO RESPONDE TEXTO
-    return give_text("Se ofrece seguro con características: "+str(semantic))
+    #nota los botones ayudan a poder hacer nuevas peticiones es importante dejarlos
+    return give_card("Se ofrece seguro con características: "+str(semantic),["confirmo","nueva consulta"])
+    
 
 def open_list(path):
     return pickle.load(open(path, "rb" ) )
