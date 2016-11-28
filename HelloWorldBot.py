@@ -19,7 +19,9 @@ def webhook():
       payload = {'recipient': {'id': sender}}
       message=get_bot_response.get_response(text)
       payload["message"]=message
+      print "holi"
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
+      print "holi2"
     except Exception as e:
       print traceback.format_exc() # something went wrong
   elif request.method == 'GET': # For the initial verification
