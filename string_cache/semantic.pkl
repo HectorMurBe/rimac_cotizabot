@@ -1,0 +1,9 @@
+(lp0
+S'chevrolet'
+p1
+aVaveo
+p2
+aV2012
+p3
+aI00
+a.

@@ -1,0 +1,120 @@
+
+///marcas de coches
+
+! sub honda = mr honda
+! sub nissan = mr nissan
+! sub chevrolet = mr chevrolet
+! sub volkswagen = mr volkswagen
+! sub toyota = mr toyota
+! sub dodge = mr dodge
+! sub bmw = mr bmw
+
+//modelo
+
+///honda
+! sub accord = md accord
+! sub city = md city
+! sub civic = md civic
+! sub cr-v = md cr-v
+! sub fit = md fit
+! sub odyssey = md odyssey
+! sub pilot = md pilot
+
+///nissan
+! sub 370z = md 370z
+! sub altima = md altima
+! sub maxima = md maxima
+! sub murano = md murano
+! sub pathfinder = md pathfinder
+! sub rogue = md rogue
+! sub sentra = md sentra
+! sub tida = md tida
+! sub tsuru = md tsuru
+! sub urvan = md urvan
+! sub x-trail = md x-trail
+
+///chevrolet
+! sub aveo = md aveo
+! sub camaro = md camaro
+! sub captiva = md captiva
+! sub chevy = md chevy
+! sub corvette = md corvette
+! sub cruze = md cruze
+! sub express van = md express van
+! sub malibu = md malibu
+! sub matiz = md matiz
+! sub spark = md spark
+! sub suburban = md suburban
+! sub tahoe = md tahoe
+! sub traverse = md traverse
+
+///volkswagen
+! sub beetle = md beetle
+! sub cross fox = md cross fox
+! sub gol = md gol
+! sub golf = md golf
+! sub gti = md gti
+! sub jetta = md jetta
+! sub passat = md passat
+! sub routan = md routan
+! sub tiguan = md tiguan
+! sub touareg = md touareg
+! sub transporter = md transporter
+
+///ford
+! sub econoline wagon = md econoline wagon
+! sub ecosport = md ecosport
+! sub edge = md edge
+! sub escape = md escape
+! sub expedition = md expedition
+! sub explorer = md explorer
+! sub fiesta = md fiesta
+! sub focus = md focus
+! sub fusion = md fusion
+! sub mariner = md mariner
+! sub mustang = md mustang
+! sub shelby = md shelby
+! sub transit = md transit
+
+///toyota
+! sub avanza = md avanza
+! sub camry = md camry
+! sub corolla = md corolla
+! sub fj cruiser = md fj cruiser
+! sub hiace = md hiace
+! sub highlander = md highlander
+! sub land cruiser = md land cruiser
+! sub prius = md prius
+! sub rav4 = md rav4
+! sub sequoia = md sequoia
+! sub sienna = md sienna
+! sub yaris = md yaris
+
+///dodge
+! sub atos = md atos
+! sub attitude = md attitude
+! sub avenger = md avenger
+! sub caliber = md caliber
+! sub challenger = md challenger
+! sub charger = md charger
+! sub journey = md journey
+! sub nitro = md nitro
+
++ hola *
+- que hay humano
+- que hay, listo para comprar
+- hola, es momento de comprar y vender
+
++ gracias *
+- no hay de que, vuelve pronto
+- de nada, espero que regreses pronto
+- no hay de que
+- gracias a ti
+
++ adios *
+- que te vaya bien :D
+- suerte, nos vemos pronto
+
+
++ *
+- <star1>
