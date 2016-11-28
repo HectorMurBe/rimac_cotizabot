@@ -13,8 +13,29 @@ def webhook():
     try:
       data = json.loads(request.data)
       text = data['entry'][0]['messaging'][0]['message']['text'] # Incoming Message Text
+      print text
       sender = data['entry'][0]['messaging'][0]['sender']['id'] # Sender ID
-      payload = {'recipient': {'id': sender}, 'message': {'text': "Hello World"}} # We're going to send this back
+      payload = {'recipient': {'id': sender},        "message":{
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"What do you want to do next?",
+        "buttons":[
+          {
+            "type":"web_url",
+            "url":"https://petersapparel.parseapp.com",
+            "title":"Show Website"
+          },
+          {
+            "type":"postback",
+            "title":"Start Chatting",
+            "payload":"USER_DEFINED_PAYLOAD"
+          }
+        ]
+      }
+    }
+  }}
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
     except Exception as e:
       print traceback.format_exc() # something went wrong
