@@ -24,13 +24,14 @@ def webhook():
         "buttons":[
           {
             "type":"web_url",
-            "url":"https://petersapparel.parseapp.com",
-            "title":"Show Website"
+            "title":"Show Website",
+            "payload":"DEVELOPER_DEFINED_PAYLOAD"
+
           },
           {
             "type":"postback",
             "title":"Start Chatting",
-            "payload":"USER_DEFINED_PAYLOAD"
+            "payload":"DEVELOPER_DEFINED_PAYLOAD"
           }
         ]
       }
