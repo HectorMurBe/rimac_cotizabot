@@ -18,7 +18,7 @@ def webhook():
       data = json.loads(request.data)
       text = data['entry'][0]['messaging'][0]['message']['text'] # Incoming Message Text
       print text
-      text=text.lower().replace("?","").replace("¿",'').replace(".","")
+      text=text.lower().replace("?","").replace(".","")
       text=text.lower()
       sender = data['entry'][0]['messaging'][0]['sender']['id'] # Sender ID
       payload = {'recipient': {'id': sender}}
