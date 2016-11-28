@@ -46,7 +46,7 @@ def webhook():
       else:#whe preprocessed
           message= {'text':resp}
           payload["message"]=message
-          get_bot_response.save_list(os.path.realpath("./string_cache/semantic.pkl"),['','','',''],)
+          get_bot_response.save_list(os.path.realpath("./string_cache/semantic.pkl"),['','','',''])
       print "holi"
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
       print "holi2"
