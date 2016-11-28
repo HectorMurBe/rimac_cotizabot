@@ -41,15 +41,17 @@ def webhook():
 """
 
       if resp == "[ERR: No reply matched]":#when not pre processed answe let bot decide
-          message=get_bot_response.get_response(text)
-          payload["message"]=message
+        print "estoy aqui"              
+        message=get_bot_response.get_response(text)
+        payload["message"]=message
       else:#whe preprocessed
           message= {'text':resp}
           payload["message"]=message
           get_bot_response.save_list(os.path.realpath("./string_cache/semantic.pkl"),['','','',''])
-      print "holi"
+
       r = requests.post('https://graph.facebook.com/v2.6/me/messages/?access_token=' + token, json=payload) # Lets send it
-      print "holi2"
+
+      print r
     except Exception as e:
       print traceback.format_exc() # something went wrong
   elif request.method == 'GET': # For the initial verification
